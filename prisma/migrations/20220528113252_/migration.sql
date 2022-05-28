@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE `role` MODIFY `axcess` VARCHAR(191) NOT NULL DEFAULT 'NULL';
+
+-- AlterTable
+ALTER TABLE `user` ADD COLUMN `password` VARCHAR(191) NOT NULL DEFAULT '';

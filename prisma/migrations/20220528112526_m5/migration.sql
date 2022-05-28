@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `role` MODIFY `axcess` VARCHAR(191) NOT NULL DEFAULT 'NULL';

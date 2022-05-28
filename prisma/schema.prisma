@@ -17,6 +17,8 @@ model User {
   mobileNumber String      @unique
   documents    Documents[]
   createdAt    DateTime    @default(now())
+  role         String      @default("user")
+  password     String      @default("")
 }
 
 model Documents {
@@ -25,4 +27,11 @@ model Documents {
   documentName String
   documentUrl  String
   user         User   @relation(fields: [userId], references: [id])
+}
+
+model Role {
+  id     Int    @id @default(autoincrement())
+  role   String @default("user")
+  axcess String @default("NULL")
+
 }

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `role` ADD COLUMN `axcess` VARCHAR(191) NOT NULL DEFAULT 'NULL';
