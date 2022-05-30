@@ -9,3 +9,8 @@ exports.deleteFile = async (file_path) => {
 		return 0;
 	}
 };
+
+exports.catchError = (err, filename) => {
+	console.log("Error at: ", filename);
+	console.log(err);
+};

@@ -86,7 +86,7 @@ router.post(
 			}
 		}
 		try {
-			await prisma.documents
+			await prisma.documents	
 				.findMany({
 					where: { userId: Number(id), documentName: documentName },
 				})
